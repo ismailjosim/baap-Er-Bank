@@ -11,31 +11,6 @@ const withdrawalBalance = document.getElementById('withdrawal-balance');
 
 
 // Event
-// Withdrawal Amount section
-// deposit Amount section
-WithdrawalButton.addEventListener('click', function () {
-    // Step-01: get input amount
-    const NewAmountStr = WithdrawalAmount.value;
-    const NewAmount = parseFloat(NewAmountStr);
-
-    // step-02: Get deposit balance Amount
-    const PreviousBalanceStr = withdrawalBalance.innerText;
-    const PreviousBalance = parseFloat(PreviousBalanceStr);
-
-    // step-03: input + balance amount
-    const deposit = PreviousBalance + NewAmount;
-    withdrawalBalance.innerText = PreviousBalance + NewAmount;
-
-    // step-04: Convert total amount to number
-    const Balance = totalBalance.innerText;
-    const mainBalance = parseFloat(Balance);
-
-    // step-05: update main balance
-    totalBalance.innerText = mainBalance - NewAmount;
-
-    // step-06: clear input field
-    WithdrawalAmount.value = '';
-});
 
 // deposit Amount section
 depositButton.addEventListener('click', function () {
@@ -63,3 +38,26 @@ depositButton.addEventListener('click', function () {
 });
 
 // Withdrawal Amount section
+WithdrawalButton.addEventListener('click', function () {
+    // Step-01: get input amount
+    const NewAmountStr = WithdrawalAmount.value;
+    const NewAmount = parseFloat(NewAmountStr);
+
+    // step-02: Get deposit balance Amount
+    const PreviousBalanceStr = withdrawalBalance.innerText;
+    const PreviousBalance = parseFloat(PreviousBalanceStr);
+
+    // step-03: input + balance amount
+    const deposit = PreviousBalance + NewAmount;
+    withdrawalBalance.innerText = PreviousBalance + NewAmount;
+
+    // step-04: Convert total amount to number
+    const Balance = totalBalance.innerText;
+    const mainBalance = parseFloat(Balance);
+
+    // step-05: update main balance
+    totalBalance.innerText = mainBalance - NewAmount;
+
+    // step-06: clear input field
+    WithdrawalAmount.value = '';
+});

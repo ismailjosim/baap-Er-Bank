@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Baap Er Bank - HTML, Tailwind & JS</title>
+		<!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<!-- Rubik font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Nunito font -->
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<style>
+			body {
+				font-family: 'Nunito Sans', sans-serif;
+			}
+			.primary_heading {
+				font-family: 'Rubik Dirt', cursive;
+			}
+		</style>
+	</head>
+	<body class="bg-slate-800">
+		<!-- header Section Start -->
+		<header class="mb-5">
+			<h1
+				class="primary_heading text-white text-5xl text-center mt-6 uppercase leading-tight"
+			>
+				Welcome to
+				<span class="font-bold text-sky-400/100">Baap er Bank</span>
+			</h1>
+		</header>
+		<!-- header Section Ends  -->
+		<!-- main section start   -->
+		<main>
+			<section>
+				<div class="bg-lime-600 w-1/2 mx-auto rounded-md p-5">
+					<h2 class="text-3xl mb-5 font-bold uppercase">please Login</h2>
+					<input
+						id="user-email"
+						class="flex mb-2 p-1 rounded-md w-1/2 border-none outline-none font-semibold"
+						type="email"
+						name=""
+						id="email"
+						placeholder="Your Email"
+					/>
+					<input
+						id="user-password"
+						class="flex mb-2 p-1 rounded-md w-1/2 border-none outline-none font-semibold"
+						type="password"
+						name=""
+						id="password"
+						placeholder="Password"
+					/>
+					<button
+						id="btn-submit"
+						class="bg-red-300 hover:bg-red-600 active:bg-violet-700 focus:outline-none focus:ring font-bold text-emerald-50 uppercase px-5 py-2 rounded-lg"
+						type="submit"
+					>
+						Login
+					</button>
+				</div>
+			</section>
+		</main>
+		<!-- main section Ends  -->
+		<!-- Script File link -->
+		<script src="JS/deposit.js"></script>
+	</body>
+</html>

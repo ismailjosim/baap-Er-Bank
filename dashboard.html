@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Baap Er Bank - HTML, Tailwind & JS</title>
+		<!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<!-- Rubik font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Nunito font -->
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<style>
+			body {
+				font-family: 'Nunito Sans', sans-serif;
+			}
+			.primary_heading {
+				font-family: 'Rubik Dirt', cursive;
+			}
+		</style>
+	</head>
+	<body class="bg-slate-800">
+		<!-- header Section Start -->
+		<header class="mb-5">
+			<h1
+				class="primary_heading text-white text-5xl text-center mt-6 uppercase leading-tight"
+			>
+				Welcome to
+				<span class="font-bold text-sky-400/100">Your dashboard</span>
+			</h1>
+		</header>
+		<!-- header Section Ends  -->
+		<!-- main section start   -->
+		<main class="mt-12 pt-12">
+			<!--========= Dashboard Section Start =========-->
+			<section>
+				<div class="grid grid-cols-3 w-9/12 mx-auto gap-4 text-white">
+					<div class="bg-blue-400 rounded-lg p-5">
+						<h2 class="text-2xl font-semibold capitalize mb-2">deposit</h2>
+						<h3 class="text-5xl font-bold">
+							$<span id="deposit-balance">00</span>
+						</h3>
+					</div>
+					<div class="bg-red-400 rounded-lg p-5">
+						<h2 class="text-2xl font-semibold capitalize mb-2">withdrawal</h2>
+						<h3 class="text-5xl font-bold">$100</h3>
+					</div>
+					<div class="bg-green-500 rounded-lg p-5">
+						<h2 class="text-2xl font-semibold capitalize mb-2">Balance</h2>
+						<h3 class="text-5xl font-bold">
+							$<span id="total-balance">1000</span>
+						</h3>
+					</div>
+				</div>
+			</section>
+			<!--========= Dashboard Section Ends =========-->
+			<section>
+				<div class="grid grid-cols-2 w-9/12 mx-auto gap-4 text-white mt-12">
+					<div class="bg-yellow-500 rounded-lg p-5">
+						<h2 class="text-2xl font-semibold capitalize mb-2">
+							deposit amount
+						</h2>
+						<input
+							type="text"
+							id="deposit-field"
+							placeholder="Enter Amount"
+							class="flex mb-2 p-1 rounded-md w-1/2 border-none outline-none font-semibold text-black"
+						/>
+						<button
+							id="btn-deposit"
+							class="bg-blue-400 px-5 py-2 rounded-lg border-none hover:bg-blue-600 outline-none focus:ring"
+							type="submit"
+						>
+							Deposit
+						</button>
+					</div>
+					<div class="bg-sky-800 rounded-lg p-5">
+						<h2 class="text-2xl font-semibold capitalize mb-2">
+							withdrawal Amount
+						</h2>
+						<input
+							type="text"
+							id=""
+							placeholder="Enter Amount"
+							class="flex mb-2 p-1 rounded-md w-1/2 border-none outline-none font-semibold text-black"
+						/>
+						<button
+							class="bg-red-400 px-5 py-2 rounded-lg border-none hover:bg-red-600 outline-none focus:ring"
+							type="submit"
+						>
+							Deposit
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- main section Ends  -->
+		<!-- Script File link -->
+		<script src="JS/deposit.js"></script>
+	</body>
+</html>

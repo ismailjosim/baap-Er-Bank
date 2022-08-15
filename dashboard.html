@@ -54,7 +54,9 @@
 					</div>
 					<div class="bg-red-400 rounded-lg p-5">
 						<h2 class="text-2xl font-semibold capitalize mb-2">withdrawal</h2>
-						<h3 class="text-5xl font-bold">$100</h3>
+						<h3 class="text-5xl font-bold">
+							$<span id="withdrawal-balance">100</span>
+						</h3>
 					</div>
 					<div class="bg-green-500 rounded-lg p-5">
 						<h2 class="text-2xl font-semibold capitalize mb-2">Balance</h2>
@@ -91,11 +93,12 @@
 						</h2>
 						<input
 							type="text"
-							id=""
+							id="withdrawal-field"
 							placeholder="Enter Amount"
 							class="flex mb-2 p-1 rounded-md w-1/2 border-none outline-none font-semibold text-black"
 						/>
 						<button
+							id="btn-withdrawal"
 							class="bg-red-400 px-5 py-2 rounded-lg border-none hover:bg-red-600 outline-none focus:ring"
 							type="submit"
 						>

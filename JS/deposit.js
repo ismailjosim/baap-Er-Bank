@@ -1,9 +1,14 @@
-// select elements
+// ===========> select elements
 const depositButton = document.getElementById('btn-deposit');
 const depositAmount = document.getElementById('deposit-field');
 const depositBalance = document.getElementById('deposit-balance');
 
 const totalBalance = document.getElementById('total-balance');
+
+
+
+
+
 
 // Event
 depositButton.addEventListener('click', function () {

@@ -11,7 +11,7 @@ document.getElementById('btn-submit').addEventListener('click', function () {
 
     // NOTE: DON'T VERIFY EMAIL PASSWORD ON THE CLIENT SIDE.
     // STEP 04: VERIFY email & Password.
-    if (email === 'ismailjosim99@gmail.com' && password === '11223344') {
+    if (email === 'ismailjosim99@gmail.com' && password === '11223344' || email === 'demo' && password === '1122') {
         window.location.href = 'dashboard.html';
     } else {
         console.log('User is not valid');
